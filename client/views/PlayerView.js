@@ -1,4 +1,8 @@
 // PlayerView.js - Defines a backbone view class for the music player.
+
+// MVC - View
+// Model - Song
+
 var PlayerView = Backbone.View.extend({
 
   // HTML5 (native) audio tag is being used
@@ -11,6 +15,12 @@ var PlayerView = Backbone.View.extend({
   setSong: function(song){
     this.model = song;
     this.render();
+  },
+
+  events: {
+    'ended': function() {
+      this.model.ended();
+    }
   },
 
   render: function(){
