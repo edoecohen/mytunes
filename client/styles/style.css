@@ -1,0 +1,39 @@
+body {
+  font-size: 12px;
+  color: white;
+  background: #383838;
+}
+
+.mainCon {
+  margin-top: 50px;
+}
+
+.mainCon audio {
+  width: 250px;
+  margin-left: 25px;
+  position: absolute;
+  top: 186px;
+}
+
+.songList {
+  margin-top: 20px;
+}
+
+.songList th {
+  font-size: 14px;
+}
+
+.songView:hover {
+  cursor: pointer;
+  background: red;
+}
+
+.artist {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.playerPic img {
+  width: 300px;
+
+}

@@ -2,6 +2,7 @@
 var LibraryView = Backbone.View.extend({
 
   tagName: "table",
+  className: "songList",
 
   initialize: function() {
     this.render();

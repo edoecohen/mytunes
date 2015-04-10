@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
   <body>
+
+    <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
     <!-- Scripts may be placed anywhere on a page. But FYI, they block rendering of elements
      below them until after the scripts load-->
     <script src="bower_components/jquery/jquery.min.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/backbone/backbone.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script src="data/data.js"></script>
 
@@ -15,6 +19,7 @@
     <script src="models/AppModel.js"></script>
 
     <script src="views/PlayerView.js"></script>
+    <script src="views/PlayerPicView.js"></script>
     <script src="views/LibraryView.js"></script>
     <script src="views/LibraryEntryView.js"></script>
     <script src="views/SongQueueView.js"></script>
@@ -35,8 +40,17 @@
         var appView = new AppView({model: app});
 
         // put the view onto the screen
-        $('body').append(appView.render());
+        $('.mainCon').append(appView.render());
       });
     </script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 mainCon">
+            </div>
+        </div>
+    </div>
+
+
   </body>
 </html>
